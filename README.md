@@ -1,6 +1,6 @@
 ## Overview
 
-Bamazon is a database which lists items that are for sale. This Node application allows you to purchase items from Bamazon from your command line. 
+Bamazon is a database which lists items that are for sale. This Node application allows you to purchase items from Bamazon from your command line. Images are in images file for a visual overview. 
 
 ## How to use
 
