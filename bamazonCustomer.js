@@ -19,10 +19,10 @@ connection.connect(function (err) {
             console.log("Item Id: " + results[i].item_id);
             console.log("---------------")
         }
-
+        // run the start function after the connection is made to prompt the user
+        buySomething();
     });
-    // run the start function after the connection is made to prompt the user
-    buySomething();
+
 });
 
 // function which prompts the user for what action they should take
@@ -50,6 +50,8 @@ function buySomething() {
 
                     if (answer.howMany > results[0].stock_quantity) {
                         console.log("We don't have that many in stock... Sorry!")
+                        // run program again
+                        buySomething();
                     } else {
 
                         var newQuantity = parseInt(results[0].stock_quantity) - parseInt(answer.howMany);
@@ -64,6 +66,8 @@ function buySomething() {
                             ],
                             function () {
                                 console.log("Thanks for shopping. A Drone is on its way to drop off your order.")
+                                // run program again
+                                buySomething();
                             });
                     }
                 }

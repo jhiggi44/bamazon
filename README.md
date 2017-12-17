@@ -10,4 +10,4 @@ Bamazon is a database which lists items that are for sale. This Node application
 4. Items will appear. Look through them to decide which to buy.
 5. Type in the unique product id.
 6. Type in quantity. 
-7. If there is enough in stock, your purchase is complete. 
+7. If there is enough in stock, your purchase is completed and the quantity in mysql is updated. 
