@@ -3,7 +3,7 @@ var inquirer = require('inquirer');
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '2Nephi3120',
+    password: '',
     database: 'bamazon_db',
 });
 
